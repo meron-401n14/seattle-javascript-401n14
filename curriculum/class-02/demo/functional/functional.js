@@ -1,59 +1,49 @@
-'use strict';
+"use strict";
 
-// Functional
+// Functional Programming Demo
 
-let numbers = [1,2,3];
+let numbers = [1, 2, 3, 4, 5, 6];
+console.log("Orginal array: ", numbers);
 
-const functionalSquares = ([...list]) => {
-  for( let i = 0; i < list.length; i++ ) {
-    list[i] = list[i] * list[i];
-  }
-  return list;
-};
+// We want to do a bunch of different operations on
+// this array
 
-let newNumbersFunctional = functionalSquares(numbers);
-console.log(newNumbersFunctional);
-console.log(numbers);
+// -------------------------------------------
+// First operation:
+// Square (a * a) each item in the array
 
+// Pure function:
+// Don't change the parameters (immutable), instead
+// return a new item
 
-// Non-Functional Examples
-// What are the non-functional issues here?
+let squared = numbers.map(val => val * val);
 
-numbers = [1,2,3];
+console.log("Squared Array: ", squared);
+console.log("Original Array (again): ", numbers);
 
-const squares = (list) => {
-  for( let i = 0; i < list.length; i++ ) {
-    list[i] = list[i] * list[i];
-  }
+// -------------------------------------------
 
-  return list;
-};
+// Second operation:
+// Remove odd numbers in the array
 
-let newNumbers = squares(numbers);
-console.log(newNumbers);
-console.log(numbers);
+let filtered = numbers.filter(val => val % 2 === 0);
 
+console.log("Filtered Array: ", filtered);
+console.log("Original Array (again): ", numbers);
 
-// Get Data
-function getData(url) {
-  // return superagent.get(url).then( data => data.body );
+// -------------------------------------------
+
+// Third operation:
+// Sum all the items in an array
+function reduceMe(red, val) {
+	return red + val;
 }
 
-// Non-Functional --- using data
-function sayHello(name) {
-  console.log( `Hi, ${name}` );
-}
-
-function sayHi(name) {
-  sayHello(name);
-}
+let reduced = numbers.reduce((red, val) => red + val);
+console.log("Reduced Array: ", reduced);
+console.log("Original Array (again): ", numbers);
 
 
-function greet(person) {
-  return function(greeting) {
-    console.log(`${greeting}, ${person}`);
-  };
-}
 
-var hello = greet('john');
-console.log( hello('shut up') );
+
+
