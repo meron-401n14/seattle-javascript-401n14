@@ -23,7 +23,7 @@ In this lab, you will be writing an application which will modify a file on your
 ### Execution Notes
 
 * Perform the above operations with standard Node `fs` module callbacks
-* Implement one version of the Application Execution using promises, and another version using `async`/`await`. Split up these implementations into separate module files which your `index.js` will `require`
+* Implement one version of the Application Execution using callbacks, one using promises, and another version using `async`/`await`. Split up these implementations into separate module files which your `index.js` will `require`
 
 ### Testing
 * Test your modules, not your `index.js`
@@ -62,6 +62,7 @@ For each part of this lab, configure your folder with the following files and di
 * `README.md` - contains your lab documentation ([template](https://github.com/codefellows/seattle-javascript-401n14/blob/master/reference/submission-instructions/labs/README-template.md))
 * `.gitignore` - contains a robust .gitignore file ([template](https://github.com/codefellows/seattle-javascript-401n14/blob/master/configs/.gitignore))
 * `.eslintrc.json` - contains the course linter configuration ([template](https://github.com/codefellows/seattle-javascript-401n14/blob/master/configs/.eslintrc.json))
+    - Note: Your eslint file may not be configured for `async`/`await`. Because of this you may see a linter error. Only errors related to `async`/`await` are acceptable to ignore!
 * `.eslintignore` - contains the course linter ignore configuration ([template](https://github.com/codefellows/seattle-javascript-401n14/blob/master/configs/.eslintignore))
 * `.travis.yml` - contains the course linter ignore configuration ([template](https://github.com/codefellows/seattle-javascript-401n14/blob/master/configs/.travis.yml))
 * `package.json` - contains npm package config and scripts ([script template](https://github.com/codefellows/seattle-javascript-401n14/blob/master/configs/package.json.notes))
