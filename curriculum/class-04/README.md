@@ -1,11 +1,14 @@
 # Class 04 - Data Modeling
 
+| [Lecture Video](https://frontrowviews.com/Home/Event/Details/5d8e9098bdb995374c4674dc) | [Lab Video](https://frontrowviews.com/Home/Event/Details/5d8e9099bdb995374c4674fd) |
+| ---- | ---- | 
+
 ## Learning Objectives
 
-- Define data modeling
-- Model real-world data
-- Create models with constraints, type checking and validity
-- Create an extensible interface and an implementation for a data model
+-   Define data modeling
+-   Model real-world data
+-   Create models with constraints, type checking and validity
+-   Create an extensible interface and an implementation for a data model
 
 ## Outline
 
@@ -17,10 +20,10 @@ JavaScript has a limited number of built-in data types. This includes objects, a
 
 #### CRUD - Basic Data Operations
 
-- **CREATE** - Add a record to a data store
-- **READ** - Retrieve a record from a data store
-- **UPDATE** - Update a record within a data store
-- **DELETE** - Remove a record from a data store
+-   **CREATE** - Add a record to a data store
+-   **READ** - Retrieve a record from a data store
+-   **UPDATE** - Update a record within a data store
+-   **DELETE** - Remove a record from a data store
 
 #### Interface
 
@@ -28,7 +31,7 @@ A modeling technique providing common access points in an API (i.e. the CRUD met
 
 #### Implementation
 
-The specific means by which a data model interacts with a persisentce layer (file, mongo, postgres, etc)
+The specific means by which a data model interacts with a persistence layer (file, mongo, postgres, etc)
 
 #### Normalization and Validation
 
