@@ -128,7 +128,7 @@ No record found
 
   - Think about:
     - When you test you shouldn't actually alter your database
-    - Similar to when you tested fs.writeFile; you didn't actually want to write to a file during a test. You avoided doing so by using **mocks**
+    - Similar to when you tested `fs.writeFile`; you didn't actually want to write to a file during a test. You avoided doing so by using **mocks**
     - What external module is used in all of the CRUD operations? This is the one you should mock up
 
 - Test out any additional functions used in `index.js` to get the code coverage you want
@@ -152,7 +152,8 @@ For each part of this lab, configure your folder with the following files and di
 - `/__tests__/` - contains unit tests
 - `/__mocks__/` - contains mock files
 - `/__data__/` - contains your MongoDB database information
-- `/docs/` - Where your documentation will reside (no generation needed)
+- `/docs/` - Where your documentation will reside (Swagger generation, no JSDocs generation needed)
+  - `swagger.json`
   - `/docs/config`
   - `/docs/config/jsdoc.config.json`
     - JSDOC Config File
@@ -162,6 +163,7 @@ For each part of this lab, configure your folder with the following files and di
 
 - Ensure that your `README.md` exists and has:
   - A link to your TravisCI
+  - A link to your SwaggerHub API Documentation
   - A link to pull request from your lab branch to your master branch in your forked repository
     - Keep this pull request open (**don't merge to master**) in case you need to resubmit your lab
   - Your module names for the application
@@ -200,6 +202,8 @@ Be sure to delete any placeholder content if you use `README-template.md`. Once 
   - Have entries in your database that match:
     - 9 people
     - 4 teams
+- `/docs/`
+  - Have your Swagger generated API docs
 
 ### Code Quality:
 
@@ -209,7 +213,7 @@ Be sure to delete any placeholder content if you use `README-template.md`. Once 
 ### Tests:
 
 - Test all CRUD operations
-- Test your index.js output
+- Test your `index.js` output
 
 | Criteria                                                                                                       | Points |
 | -------------------------------------------------------------------------------------------------------------- | ------ |
@@ -218,4 +222,3 @@ Be sure to delete any placeholder content if you use `README-template.md`. Once 
 | Tests: MUST HAVE A TRAVIS URL TO BE CONSIDERED! One unit test minimum, 80% coverage for full points            | 2      |
 | Documentation: README + UML                                                                                    | 2      |
 | Total:                                                                                                         | 10     |
-
