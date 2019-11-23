@@ -1,15 +1,14 @@
 {
-  "name": "class-06",
+  "name": "app",
   "version": "1.0.0",
   "description": "",
-  "main": "chatroom.js",
+  "main": "file-changer.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "uuid": "^3.2.1"
+    "faker": "^4.1.0"
   }
 }
