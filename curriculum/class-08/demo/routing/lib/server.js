@@ -27,7 +27,7 @@ app.get('/:id', (req, res, next) => {
 
 module.exports = {
   server: app,
-  start: port => {
+  start: port => { console.log(port);
     let PORT = port || process.env.PORT || 3000;
     app.listen(PORT, () => console.log(`Listening on ${PORT}`));
   }

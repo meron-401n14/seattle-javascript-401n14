@@ -16,9 +16,8 @@ router.get('/', (req, res, next) => {
 // GET :id with Async/Await
 // people/Sarah
 router.get('/:id', async (req, res, next) => {
-  let data = await people.get(req.params.id);
-  if (data && data._id) res.send(data);
-  else next('route');
+  let person = await people.get(req.params.id);
+  res.status(200).json(person[0]);
 });
 
 // GET :firstName with Async/Await

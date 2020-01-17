@@ -14,7 +14,7 @@ class Model {
     this.file = file;
     this.database = [];
   }
-
+}
   // Initialize the database
   async load() {
     // read the file asynchronously and save the results in
@@ -56,18 +56,9 @@ class Model {
   }
 
   // CRUD: read / search - we don't know if it exists
+  await this.load();
   async read(key, val) {
-    // go through this.database array
-    // if the object at this.database[indx] has a key
-    // val pair that matches the parameter val
-    // return that object
-
     let found = {};
-
-    // this is optional, but recommended
-    // in case you forgot to load, made some
-    // change and didn't update this.database, etc
-    await this.load();
 
     this.database.forEach(item => {
       if (item[key] === val) found = item;
@@ -75,10 +66,21 @@ class Model {
 
     return found;
   }
+    // go through this.database array
+    // if the object at this.database[indx] has a key
+    // val pair that matches the parameter val
+    // return that object
+
+    
+    // this is optional, but recommended
+    // in case you forgot to load, made some
+    // change and didn't update this.database, etc
 
   // CRUD: update - you usually only update something that exists
   // if something exists, it has an id
   async update(id, item) {
+
+    
     // change a piece of the data
     // change data where data.id === id
     // [async] write data to file
@@ -100,6 +102,6 @@ class Model {
 
     return true;
   }
-}
+
 
 module.exports = Model;

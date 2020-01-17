@@ -16,8 +16,8 @@ function apiCall(str) {
 			resolve({ data: str });
 			// after resolve do .then()
 			// error checking
-			/* if (payload is an error)
-				reject(); 
+      /* if (payload is an error)
+				reject();
 			if (payload is success)
 				resolve(payload.data); 
 			*/
