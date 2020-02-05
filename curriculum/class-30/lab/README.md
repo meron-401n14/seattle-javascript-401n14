@@ -29,11 +29,13 @@ We will be coding this lab primarily in-class, so most of the must-have requirem
     -   Allow user to delete tasks
     -   Allow user to edit tasks
     -   Allow user to filter tasks based on priority level (tasks without a priority level should default to priority 5)
--   You must utilize _one_ React Native specific feature:
-    -   Calendar Date Picker
-    -   Camera integration
-    -   GPS integration
-    -   Contacts integration
+-   You must utilize _one_ React Native specific feature. To see a full list of phone features you can use, see the [Expo SDK documentation here](https://docs.expo.io/versions/latest/sdk/overview/). Here's some examples of some things you may want to add. Note that adding these may require that you add code to your API Server so this new data is correctly saved!
+    -   [Take a photo](https://docs.expo.io/versions/v36.0.0/sdk/camera/) or [pick a photo](https://docs.expo.io/versions/v36.0.0/sdk/imagepicker/) for each task
+    -   [Save your gps location](https://docs.expo.io/versions/v36.0.0/sdk/location/) for when the task was made
+    -   Assign your task to someone from your [contacts list](https://docs.expo.io/versions/v36.0.0/sdk/contacts/)
+    -   Implement [OAuth Login](https://docs.expo.io/versions/v36.0.0/sdk/app-auth/) using OpenId or [Google](https://docs.expo.io/versions/v36.0.0/sdk/google-sign-in/)
+    -   Modify the [app appearance](https://docs.expo.io/versions/v36.0.0/sdk/appearance/) depending on if the user has a light or dark phone theme
+    -   Allow users to [attach documents](https://docs.expo.io/versions/v36.0.0/sdk/document-picker/) to tasks
 
 ### Commenting
 
